@@ -13,13 +13,11 @@ import androidx.recyclerview.widget.RecyclerView;
 
 public class MyAdapter extends RecyclerView.Adapter<MyViewHolder> {
     List<Note> notes;
-    //final OnItemClickListener listener; // DODANO - STARO
+    private OnItemClickListener listener;
 
-    private OnItemClickListener listener; // DODANO
-
-    public MyAdapter(List<Note> notes, OnItemClickListener listener) {  //LISTENER DODANO
+    public MyAdapter(List<Note> notes, OnItemClickListener listener) {
         this.notes = notes;
-        this.listener = listener; // DODANO , OnItemClickListener listener
+        this.listener = listener;
     }
 
     @NonNull
@@ -33,10 +31,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyViewHolder> {
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         holder.column.setText(notes.get(position).column);
         holder.title.setText(notes.get(position).title);
-
-        //holder.bind(notes.get(position), listener); // DODANO
-
-        //LinearLayout layout = holder.layout;
     }
 
     @Override

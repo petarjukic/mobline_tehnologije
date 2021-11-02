@@ -52,15 +52,6 @@ public class MainActivity extends AppCompatActivity implements OnItemClickListen
                 addNote();
             }
         });
-
-        /*
-        layout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, DetailActivity.class);
-                startActivity(intent);
-            }
-        });*/
     }
 
     private void executeService() {
@@ -68,17 +59,8 @@ public class MainActivity extends AppCompatActivity implements OnItemClickListen
             @Override
             public void run() {
                 List<Note> notes = database.noteDAO().getAll();
-                adapter = new MyAdapter(notes, MainActivity.this::onNoteClick);  //JOS PROVJERI STA I KAKO
+                adapter = new MyAdapter(notes, MainActivity.this::onNoteClick);
                 recyclerView.setAdapter(adapter);
-                /*handler.post(new Runnable() {
-                    @Override
-                    public void run() {
-                        //adapter = new MyAdapter(notes, MainActivity.this::onNoteClick);  //JOS PROVJERI STA I KAKO
-                        //recyclerView.setAdapter(adapter);
-                    }
-                });
-
-                 */
             }
         });
     }
@@ -91,9 +73,6 @@ public class MainActivity extends AppCompatActivity implements OnItemClickListen
     @Override
     public void onNoteClick(int position) {
         List<Note> notes = database.noteDAO().getAll();
-        //notes.get(position);
-
-        // DODANO
         Intent intent = new Intent(MainActivity.this, DetailActivity.class);
         intent.putExtra("selected_note", notes.get(position));
         startActivity(intent);
