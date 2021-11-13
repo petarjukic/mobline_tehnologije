@@ -73,6 +73,7 @@ public class MainActivity extends AppCompatActivity implements OnItemClickListen
     @Override
     public void onNoteClick(int position) {
         List<Note> notes = database.noteDAO().getAll();
+
         Intent intent = new Intent(MainActivity.this, DetailActivity.class);
         intent.putExtra("selected_note", notes.get(position));
         startActivity(intent);

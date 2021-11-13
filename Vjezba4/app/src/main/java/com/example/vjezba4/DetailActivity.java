@@ -43,6 +43,7 @@ public class DetailActivity extends AppCompatActivity {
 
         if(getIntent().hasExtra("selected_note")) {
             Note note = getIntent().getParcelableExtra("selected_note");
+
             title.setText(note.title);
             content.setText(note.column);
 
@@ -51,6 +52,7 @@ public class DetailActivity extends AppCompatActivity {
     }
 
     private void buttonClick(Note note) {
+
         saveButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -86,7 +88,7 @@ public class DetailActivity extends AppCompatActivity {
             public void onClick(View view) {
                 AlertDialog dialog = new AlertDialog.Builder(DetailActivity.this)
                         .setTitle("Delete Note")
-                        .setMessage("Do you want to delete note?")
+                        .setMessage("Do you wnat to delete note?")
                         .setPositiveButton("OK", null)
                         .setNegativeButton("Cancel", null)
                         .show();
