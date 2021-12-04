@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Vjezba5</string>
+    <string name="coordinates">Coordinates</string>
+    <string name="adress">Adress</string>
+    <string name="city">City</string>
+    <string name="country">Country</string>
+    <string name="rationale_location">Ovoj aplikaciji je potrebno dopustenje uvida u lokaciju uredjaja, kako bi se odredilo gdje se nalazite.</string>
+    <string name="updated_location">Updated location</string>
+</resources>
