@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "711025572920",
+    "project_id": "vjezba6mobilne",
+    "storage_bucket": "vjezba6mobilne.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:711025572920:android:4cb0a2f0ca952451913acd",
+        "android_client_info": {
+          "package_name": "com.example.vjezba6"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "711025572920-kmp6eu3ttc9doc6vvimkbo16c6abu21l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQFYhBACS8APOJvW1h0rEcqswKb_wG5SE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "711025572920-kmp6eu3ttc9doc6vvimkbo16c6abu21l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
